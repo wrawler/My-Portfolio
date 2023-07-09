@@ -19,29 +19,6 @@
 .navbar li a:active {
     color: rgb(167, 158, 158);
 }
-
-.profile-container {
-    position: absolute;
-    top: 30%;
-    left: 70px;
-    transform: translateY(-50%);
-    /*It vertically centers the photo with the container*/
-}
-
-.profile-photo {
-    padding: 50px, 50px;
-    width: 200px;
-    height: 200px;
-
-    border: 10px solid #777474;
-    /*Border properties*/
-    border-radius: 40%;
-    /*Applies circular shape if the photo is square*/
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 200);
-    /*Adds a shadow effect*/
-
-}
-
 .center-box {
     position: absolute;
     top: 140px;
@@ -50,21 +27,16 @@
     height: 600px;
 
     background-color: rgba(236, 231, 231, 0.4);
-    /* Set the background color */
     margin: 0 auto;
-    /* Center horizontally */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     border-radius: 5%;
 }
 
-.center-box p {
-    font-size: 18px;
+.center-box #Hello{
+    font-size: 40px;
     color: #333;
-    padding: 20px;
-    /* Add padding for text */
+    padding-left: 15px;;
+    padding-top: 5px;
 }
 
 .side-buttons img {
@@ -104,38 +76,10 @@
 }
 
 body {
-    background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1600);
-    background-repeat: no-repeat;
+    background-image: url(https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=1920);
     background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
-}
-
-@media (max-width: 768px) {
-    .profile-container {
-        position: static;
-        transform: none;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .profile-photo {
-        width: 80%;
-        /* Adjust the width as needed */
-        height: auto;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .left_button,
-    .right_button {
-        position: static;
-        top: auto;
-        transform: none;
-        margin: 0 auto;
-    }
-}
-
-
-* {
-    box-sizing: border-box;
+    background-attachment: fixed;
+    background-position: center;
 }
